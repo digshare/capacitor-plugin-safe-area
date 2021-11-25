@@ -1,6 +1,6 @@
 {
   "name": "@mufan/capacitor-plugin-safe-area",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A capacitor plugin for getting screen safe area",
   "publishConfig": {
     "access": "public"
