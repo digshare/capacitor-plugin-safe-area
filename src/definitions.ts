@@ -6,7 +6,7 @@ export interface SafeArea {
 }
 
 export interface SafeAreaPlugin {
-  getSafeArea(): Promise<SafeArea>;
+  getSafeArea(): Promise<SafeArea | undefined>;
   getStatusBarHeight(): Promise<{
     value: number;
   }>;

@@ -21,6 +21,7 @@ public class SafeAreaPlugin extends Plugin {
 
         if (windowInsets == null) {
             Log.i(SafeAreaPlugin.class.toString(), "WindowInsets is not available.");
+            call.resolve();
             return;
         }
 
@@ -28,6 +29,7 @@ public class SafeAreaPlugin extends Plugin {
 
         if (displayCutout == null) {
             Log.i(SafeAreaPlugin.class.toString(), "DisplayCutout is not available.");
+            call.resolve();
             return;
         }
 
