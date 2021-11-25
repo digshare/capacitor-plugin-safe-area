@@ -13,25 +13,59 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`getSafeArea()`](#getsafearea)
+* [`getStatusBarHeight()`](#getstatusbarheight)
+* [`getNavigationBarHeight()`](#getnavigationbarheight)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### getSafeArea()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+getSafeArea() => Promise<SafeArea>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#safearea">SafeArea</a>&gt;</code>
 
 --------------------
+
+
+### getStatusBarHeight()
+
+```typescript
+getStatusBarHeight() => Promise<{ value: number; }>
+```
+
+**Returns:** <code>Promise&lt;{ value: number; }&gt;</code>
+
+--------------------
+
+
+### getNavigationBarHeight()
+
+```typescript
+getNavigationBarHeight() => Promise<{ value: number; }>
+```
+
+**Returns:** <code>Promise&lt;{ value: number; }&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### SafeArea
+
+| Prop         | Type                |
+| ------------ | ------------------- |
+| **`top`**    | <code>number</code> |
+| **`left`**   | <code>number</code> |
+| **`bottom`** | <code>number</code> |
+| **`right`**  | <code>number</code> |
 
 </docgen-api>
