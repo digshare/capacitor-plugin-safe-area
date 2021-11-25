@@ -26,7 +26,7 @@ npx cap sync
 ### getSafeArea()
 
 ```typescript
-getSafeArea() => Promise<SafeArea>
+getSafeArea() => Promise<SafeArea | undefined>
 ```
 
 **Returns:** <code>Promise&lt;<a href="#safearea">SafeArea</a>&gt;</code>
