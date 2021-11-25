@@ -1,3 +1,16 @@
+export interface SafeArea {
+  top: number;
+  left: number;
+  bottom: number;
+  right: number;
+}
+
 export interface SafeAreaPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  getSafeArea(): Promise<SafeArea>;
+  getStatusBarHeight(): Promise<{
+    value: number;
+  }>;
+  getNavigationBarHeight(): Promise<{
+    value: number;
+  }>; 
 }

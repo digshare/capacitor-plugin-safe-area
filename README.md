@@ -1,6 +1,6 @@
 # @mufan/capacitor-plugin-safe-area
 
-A capacitor plugin for getting screen safe area
+A capacitor plugin for getting screen safe area, android only currently.
 
 ## Install
 
